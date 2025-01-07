@@ -1,4 +1,6 @@
 using System;
+using Microsoft.VisualBasic;
+
 
 namespace HTMLEditor
 {
@@ -7,8 +9,14 @@ namespace HTMLEditor
         public static void Show()
         {
             Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Blue;
+
+            var (columnSize, lineSize) = Screem.GetScreemSize();
+
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Screem.DrawScreem(columnSize, lineSize);
         }
+
     }
 }

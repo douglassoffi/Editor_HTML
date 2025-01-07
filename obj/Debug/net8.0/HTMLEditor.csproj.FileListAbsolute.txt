@@ -1,0 +1,15 @@
+/home/douglas/Documents/Source/HTMLEditor/bin/Debug/net8.0/HTMLEditor
+/home/douglas/Documents/Source/HTMLEditor/bin/Debug/net8.0/HTMLEditor.deps.json
+/home/douglas/Documents/Source/HTMLEditor/bin/Debug/net8.0/HTMLEditor.runtimeconfig.json
+/home/douglas/Documents/Source/HTMLEditor/bin/Debug/net8.0/HTMLEditor.dll
+/home/douglas/Documents/Source/HTMLEditor/bin/Debug/net8.0/HTMLEditor.pdb
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.GeneratedMSBuildEditorConfig.editorconfig
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.AssemblyInfoInputs.cache
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.AssemblyInfo.cs
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.csproj.CoreCompileInputs.cache
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.sourcelink.json
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.dll
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/refint/HTMLEditor.dll
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.pdb
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/HTMLEditor.genruntimeconfig.cache
+/home/douglas/Documents/Source/HTMLEditor/obj/Debug/net8.0/ref/HTMLEditor.dll
