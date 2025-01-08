@@ -18,6 +18,7 @@ namespace HTMLEditor
             for (int column = 0; column <= columnSize; column++)
                 Console.Write("-");
             Console.Write("+");
+            Console.Write("\n");
         }
 
         // Cria as linhas da tela.
@@ -36,21 +37,28 @@ namespace HTMLEditor
         // Define o tamaho da Tela que será gerada.
         public static (int, int) GetScreemSize()
         {
-            Console.WriteLine("Qual tamanho de tela desejada?\n" + "VALOR RECOMENDADO: 30/10\n");
+            Console.WriteLine("Qual tamanho de tela desejada?\n");
 
-            Console.WriteLine("Tamanho da COLUNA:");
-            int columnSize = ReadPositiveNumber();
+            Console.WriteLine("Tamanho da COLUNA (MÍNIMO 23 | MÁXIMO 50):");
+            int columnSize = GetColumnSize();
 
-            Console.WriteLine("\nTamanho da LINHA:");
-            int lineSize = ReadPositiveNumber();
+            Console.WriteLine("\nTamanho da LINHA: (MÍNIMO 10 | MÁXIMO 50)");
+            int lineSize = GetLineSize();
 
             return (columnSize, lineSize);
         }
 
-        public static int ReadPositiveNumber()
+        public static int GetColumnSize()
         {
             int number;
-            while (!int.TryParse(Console.ReadLine(), out number) || number <= 0) { }
+            while (!int.TryParse(Console.ReadLine(), out number) || number < 23 || number > 50) { }
+            return number;
+        }
+
+        public static int GetLineSize()
+        {
+            int number;
+            while (!int.TryParse(Console.ReadLine(), out number) || number < 10 || number > 50) { }
             return number;
         }
     }
