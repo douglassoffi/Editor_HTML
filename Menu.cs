@@ -3,7 +3,7 @@ using Microsoft.VisualBasic;
 
 
 namespace HTMLEditor
-{
+{   
     public static class Menu
     {
         public static void Show()
@@ -32,7 +32,7 @@ namespace HTMLEditor
             Console.SetCursorPosition(3, 2);
             Console.WriteLine("EDITOR HTML");
             Console.SetCursorPosition(3, 3);
-            Console.WriteLine("===========");
+            Console.WriteLine("-----------");
             Console.SetCursorPosition(3, 4);
             Console.WriteLine("Selecione uma opção:");
             Console.SetCursorPosition(3, 6);
@@ -49,7 +49,7 @@ namespace HTMLEditor
         {
             switch (option)
             {
-                case 1: Console.WriteLine("Editor"); break;
+                case 1: Editor.Show(); break;
                 case 2: Console.WriteLine("Abrir"); break;
                 case 0: return;
                 default: Show(); break;
