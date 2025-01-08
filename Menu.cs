@@ -10,8 +10,7 @@ namespace HTMLEditor
         {
             Console.Clear();
 
-            // Aqui o usuário deveria informar o tamnho da tela que ele 
-            // deseja mas para testes o valor será padronizado para 23/10
+            // Aqui o usuário deveria informar o tamnho da tela que ele deseja mas para testes o valor será padronizado para 23/10
             // var (columnSize, lineSize) = Screem.GetScreemSize();
 
             Console.Clear();
@@ -23,8 +22,9 @@ namespace HTMLEditor
 
             WriteOptions();
 
-            int option;
-            while (!int.TryParse(Console.ReadLine(), out option) || option < 0 || option >= 2) { }
+            int option = int.Parse(Console.ReadLine());
+
+            HandleMenuOption(option);
         }
 
         public static void WriteOptions()
@@ -43,6 +43,17 @@ namespace HTMLEditor
             Console.WriteLine("0 - Sair");
             Console.SetCursorPosition(3, 10);
             Console.Write("Opção: ");
+        }
+
+        public static void HandleMenuOption(int option)
+        {
+            switch (option)
+            {
+                case 1: Console.WriteLine("Editor"); break;
+                case 2: Console.WriteLine("Abrir"); break;
+                case 0: return;
+                default: Show(); break;
+            }
         }
     }
 }
