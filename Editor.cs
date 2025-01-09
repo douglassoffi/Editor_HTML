@@ -6,13 +6,13 @@ namespace HTMLEditor
     {
         public static void Show()
         {
-            Console.Clear();
-
-            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
 
+            Console.Clear();
+
             Console.WriteLine("Editor");
-            Console.WriteLine("------");
+            Console.WriteLine("------\n");
 
             Start();
 
@@ -28,13 +28,18 @@ namespace HTMLEditor
 
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
 
-            Console.WriteLine(" --------------------------------------------");
-            Console.WriteLine(" Deseja salvar o arquivo? [s - SIM | n - NÃO]");
+            Console.Clear();
+
+            Viewer.Replace(text.ToString());
+            Console.ReadKey();
+
+            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine("Deseja salvar o arquivo? [s - SIM | n - NÃO]");
 
             char option = char.Parse(Console.ReadLine().ToLower());
 
             if (option == 's')
-                Save(text);
+                Save(text.ToString());
 
             else if (option == 'n')
             {
@@ -43,14 +48,14 @@ namespace HTMLEditor
             }
         }
 
-        public static void Save(StringBuilder text)
+        public static void Save(string text)
         {
             Console.Clear();
-            Console.WriteLine("Informe o caminho para salvar o arquivo: ");
+            Console.WriteLine("Informe o nome do arquivo: ");
 
             var path = Console.ReadLine();
 
-            using var file = new StreamWriter(path);
+            using var file = new StreamWriter("text/" + path + ".txt");
             file.Write(text);
 
             Console.Clear();

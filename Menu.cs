@@ -3,7 +3,7 @@ using Microsoft.VisualBasic;
 
 
 namespace HTMLEditor
-{   
+{
     public static class Menu
     {
         public static void Show()
@@ -12,8 +12,6 @@ namespace HTMLEditor
 
             // Aqui o usuário deveria informar o tamnho da tela que ele deseja mas para testes o valor será padronizado para 23/10
             // var (columnSize, lineSize) = Screem.GetScreemSize();
-
-            Console.Clear();
 
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
@@ -50,8 +48,8 @@ namespace HTMLEditor
             switch (option)
             {
                 case 1: Editor.Show(); break;
-                case 2: Console.WriteLine("Abrir"); break;
-                case 0: return;
+                case 2: Viewer.Open(); break;
+                case 0: Console.Clear(); return;
                 default: Show(); break;
             }
         }
