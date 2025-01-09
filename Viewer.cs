@@ -6,8 +6,8 @@ namespace HTMLEditor
     {
         public static void Show()
         {
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            // Console.BackgroundColor = ConsoleColor.White;
+            // Console.ForegroundColor = ConsoleColor.Black;
 
             Console.Clear();
 
@@ -23,7 +23,7 @@ namespace HTMLEditor
             {
                 if (strong.IsMatch(words[i]))
                 {
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write(
                         words[i].Substring(
                             words[i].IndexOf('>') + 1,
@@ -34,7 +34,7 @@ namespace HTMLEditor
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.Black;
+                    // Console.ForegroundColor = ConsoleColor.Black;
                     Console.Write(words[i]);
                     Console.Write(" ");
                 }
@@ -45,8 +45,8 @@ namespace HTMLEditor
         {
             Console.Clear();
 
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            // Console.BackgroundColor = ConsoleColor.White;
+            // Console.ForegroundColor = ConsoleColor.Black;
 
             Console.WriteLine("Qual o nome do arquivo?");
             string path = Console.ReadLine();

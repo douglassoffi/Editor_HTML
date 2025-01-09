@@ -6,8 +6,8 @@ namespace HTMLEditor
     {
         public static void Show()
         {
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            // Console.BackgroundColor = ConsoleColor.White;
+            // Console.ForegroundColor = ConsoleColor.Black;
 
             Console.Clear();
 
@@ -32,6 +32,8 @@ namespace HTMLEditor
 
             Viewer.Replace(text.ToString());
             Console.ReadKey();
+
+            Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("Deseja salvar o arquivo? [s - SIM | n - NÃO]");

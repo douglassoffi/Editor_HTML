@@ -13,8 +13,8 @@ namespace HTMLEditor
             // Aqui o usuário deveria informar o tamnho da tela que ele deseja mas para testes o valor será padronizado para 23/10
             // var (columnSize, lineSize) = Screem.GetScreemSize();
 
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.ForegroundColor = ConsoleColor.Black;
+            // Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.White;
 
             Screem.DrawScreem(23, 10);
 
